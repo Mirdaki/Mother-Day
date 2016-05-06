@@ -21,25 +21,31 @@
     <body unresolved>
         <template is="dom-bind" id="app">
             <!-- Add image here -->
-            <paper-card class="top" image="Mother's Day Image.jpg">
+            <paper-card class="content" image="Mother's Day Image.jpg">
                 <div class="card-content">
                     <!-- Add message here!  -->
-                    I wanted to say Happy Mother's Day to you Mom. You mean a lot to me, even though I may not articulate that. I hope you have a great day.
+                    I wanted to say Happy Mother's Day to you Mom. You mean a lot to me, even though I may not articulate that. I hope you have a great day!
                 </div>
                 <div class="card-actions">
-                    <paper-button><iron-icon icon="social:mood"></iron-icon></paper-button>
+                    <paper-button onclick="toast0.open()"><iron-icon icon="social:mood"></iron-icon></paper-button>
+                    <paper-toast id="toast0" text="I love you!"></paper-toast>
                     <a href="https://github.com/Nerdboy314/Mother-Day"><paper-button><iron-icon icon="icons:code"></iron-icon></paper-button></a>
                 </div>
             </paper-card>
-            <paper-card class="below" heading="Quotes you might like">
+            <paper-card class="content" heading="Quotes you might like">
                 <iron-pages selected="0">
                     <div><i>
-                        "What day is it?"
-                        "It's today", squeaked Piglet.
-                        "My favorite day", said Pooh.
+                        "What day is it?" <br>
+                        "It's today", squeaked Piglet. <br>
+                        "My favorite day", said Pooh. <br>
                     </i></div>
-                    <div>Two</div>
-                    <div>Three</div>
+                    <div><i>
+                        Piglet: How do you spell 'love'? <br>
+                        Pooh: You don't spell it... you feel it <br>
+                    </i></div>
+                    <div><i> How lucky I am to have something that makes saying goodbye so hard - A.A. Milne</i></div>
+                    <div><i>
+                        "That doesn't make much sense to me. But then again, you are very small" - Treebeard</i></div>
                 </iron-pages>
                 <div class="card-actions">
                     <paper-button id="nextButton"> Next </paper-button>
@@ -51,7 +57,7 @@
                     });
                 </script>
             </paper-card>
-            <paper-card class="below" heading="Missing me?">
+            <paper-card class="content" heading="Missing me?">
                 <div class="card-content">
                     <!-- <div class="paper-title"> <h3> Missing me? </h3> </div> -->
                     Give me a call! Note: Please text first to make sure I'm free.
