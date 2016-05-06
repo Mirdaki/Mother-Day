@@ -21,7 +21,7 @@
     <body unresolved>
         <template is="dom-bind" id="app">
             <!-- Add image here -->
-            <paper-card class="content" image="Mother's Day Image.jpg">
+            <paper-card class="top" image="Mother's Day Image.jpg">
                 <div class="card-content">
                     <!-- Add message here!  -->
                     I wanted to say Happy Mother's Day to you Mom. You mean a lot to me, even though I may not articulate that. I hope you have a great day.
@@ -31,7 +31,27 @@
                     <a href="https://github.com/Nerdboy314/Mother-Day"><paper-button><iron-icon icon="icons:code"></iron-icon></paper-button></a>
                 </div>
             </paper-card>
-            <paper-card class="content" heading="Missing me?">
+            <paper-card class="below" heading="Quotes you might like">
+                <iron-pages selected="0">
+                    <div><i>
+                        "What day is it?"
+                        "It's today", squeaked Piglet.
+                        "My favorite day", said Pooh.
+                    </i></div>
+                    <div>Two</div>
+                    <div>Three</div>
+                </iron-pages>
+                <div class="card-actions">
+                    <paper-button id="nextButton"> Next </paper-button>
+                </div>
+                <script>
+                    document.getElementById('nextButton').addEventListener('click', function(e) {
+                        var pages = document.querySelector('iron-pages');
+                        pages.selectNext();
+                    });
+                </script>
+            </paper-card>
+            <paper-card class="below" heading="Missing me?">
                 <div class="card-content">
                     <!-- <div class="paper-title"> <h3> Missing me? </h3> </div> -->
                     Give me a call! Note: Please text first to make sure I'm free.
@@ -44,7 +64,7 @@
         </template>
 
         <!-- build:js scripts/app.js -->
-        <script src="app.js"></script>
+        <!-- <script src="app.js"></script> -->
 
     </body>
 </html>
