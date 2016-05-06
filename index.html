@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Regular meta information -->
+        <meta charset="utf-8">
+        <meta name="description" content="Happy Mother's Day Mom">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Happy Mother's Day!</title>
+
+        <!-- Styling information -->
+        <link rel="stylesheet" href="main.css">
+
+        <!-- This is the only html import, this is to avoid importing polymer multiple times -->
+        <link rel="import" href="elements.html">
+
+        <!-- Default Bower Stuff -->
+        <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+
+    </head>
+
+    <body unresolved>
+        <template is="dom-bind" id="app">
+            <!-- Add image here -->
+            <paper-card class="content" image="Mother's Day Image.jpg">
+                <div class="card-content">
+                    <!-- Add message here!  -->
+                    I wanted to say Happy Mother's Day to you Mom. You mean a lot to me, even though I may not articulate that. I hope you have a great day.
+                </div>
+                <div class="card-actions">
+                    <paper-button><iron-icon icon="social:mood"></iron-icon></paper-button>
+                    <a href="https://github.com/Nerdboy314/Mother-Day"><paper-button><iron-icon icon="icons:code"></iron-icon></paper-button></a>
+                </div>
+            </paper-card>
+            <paper-card class="content" heading="Missing me?">
+                <div class="card-content">
+                    <!-- <div class="paper-title"> <h3> Missing me? </h3> </div> -->
+                    Give me a call! Note: Please text first to make sure I'm free.
+                </div>
+                <div class="card-actions">
+                    <google-hangout-button apps></google-hangout-button>
+                </div>
+            </paper-card>
+
+        </template>
+
+        <!-- build:js scripts/app.js -->
+        <script src="app.js"></script>
+
+    </body>
+</html>

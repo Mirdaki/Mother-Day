@@ -1,0 +1,25 @@
+{
+  "name": "Mother-Day",
+  "homepage": "https://github.com/Nerdboy314/Mother-Day",
+  "authors": [
+    "Nerdboy314 <mdbooe@gmail.com>"
+  ],
+  "description": "A little website as a gift for Mother's Day",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0",
+    "paper-card": "PolymerElements/paper-card#^1.1.1",
+    "paper-button": "PolymerElements/paper-button#^1.0.11",
+    "iron-icons": "PolymerElements/iron-icons#^1.1.3",
+    "iron-icon": "PolymerElements/iron-icon#^1.0.8",
+    "google-hangout-button": "GoogleWebComponents/google-hangout-button#^1.0.1"
+  }
+}

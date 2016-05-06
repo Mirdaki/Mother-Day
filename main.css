@@ -1,0 +1,14 @@
+body {
+    background: #fafafa;
+    font-family: 'Roboto', 'Helvetica Neue', monospace;
+    color: #333333;
+}
+
+.content {
+    float: center;
+    max-width: 33%;
+    min-width: 33%;
+    margin: 10px 30px 30px;
+}
+
+.paper-title { @apply(--paper-font-headline); }
